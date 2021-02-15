@@ -1,0 +1,120 @@
+/* Custom Theme */
+body[data-topbar=dark] #page-topbar {
+    background-color: #282e3f;
+}
+#page-topbar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.navbar-header {
+    height: 60px;
+}
+.topnav {
+    margin-top: 60px;
+}
+.bg-main {
+    background-color: #2a3042;
+}
+.alert li {
+    list-style: none;
+}
+.vertical-middle {
+    vertical-align: middle!important;
+}
+
+/* Bootstrap */
+.table thead th {
+    border-bottom: 2px solid #ffffff;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #ffffff;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    padding-left: 0;
+    padding-right: 0;
+}
+.row>div:not(:first-child) {
+    padding-left: 12px;
+}
+.row>div:not(:last-child) {
+    padding-right: 12px;
+}
+.navbar-header {
+    height: 50px;
+}
+.topnav {
+    margin-top: 50px;
+}
+.topnav .navbar-nav .nav-link {
+    padding: 0.75rem 1.3rem;
+}
+body[data-layout=horizontal] .page-content {
+    margin-top: 40px;
+}
+.form-control[readonly] {
+    background-color: #2e3548!important;
+}
+.accordion-body {
+    margin-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* Select2 */
+.select2-container {
+    width: 100%!important;
+}
+
+/* Dropify */
+.dropify-wrapper {
+    background-color: #2e3548;
+    border: 2px solid #2e3548;
+}
+.dropify-wrapper:hover {
+    background-image: -webkit-linear-gradient(135deg, #32394f 25%, transparent 25%, transparent 50%, #32394f 50%, #32394f 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, #32394f 25%, transparent 25%, transparent 50%, #32394f 50%, #32394f 75%, transparent 75%, transparent);
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes 2s linear infinite;
+}
+.dropify-wrapper .dropify-message p {
+    font-size: .8125rem;
+    color: #a6b0cf;
+    font-family: Poppins,sans-serif;
+}
+.dropify-wrapper .dropify-message span.file-icon {
+    color: #a6b0cf;
+}
+.dropify-wrapper .dropify-preview {
+    background-color: #2e3548;
+}
+.dropify-wrapper .dropify-preview .dropify-render img {
+    background-color: #2e3548;
+}
+
+/* Treeview */
+.jstree-default .jstree-search {
+    color: #e7f6f6!important;
+}
+
+/* Mail List */
+.mail-list a {
+    padding: 8px 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.mail-list a.active {
+    background-color: #32394f;
+    border-radius: 4px;
+}
+
+/* Custom Element */
+.jumlah-sidebar {
+    margin-top: -4px;
+}
+.border-radius-0 {
+    border-radius: 0!important;
+}
