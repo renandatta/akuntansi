@@ -3,7 +3,7 @@
     <table class="table table-borderless">
         <tbody>
         <tr>
-            <td class="py-1" colspan="6" style="background-color: rgba(191,200,226,.05);"><b>{{ $value->kode . ' - ' . $value->nama }}</b></td>
+            <td class="py-1" colspan="6" style="background-color: #eaeaea;"><b>{{ $value->kode . ' - ' . $value->nama }}</b></td>
         </tr>
         @php($saldo = 0)
         @foreach($value->transaksi as $item)

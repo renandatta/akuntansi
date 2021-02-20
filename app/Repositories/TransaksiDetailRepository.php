@@ -53,8 +53,8 @@ class TransaksiDetailRepository
         if ($tanggal_mulai != '' || $tanggal_sampai != '' || $order_tanggal != '')
             $transaksiDetail = $transaksiDetail
                 ->whereHas('transaksi', function ($q) use ($tanggal_mulai, $tanggal_sampai, $order_tanggal) {
-                    if ($tanggal_mulai != '') $q->where('tanggal', '>=', $tanggal_mulai);
-                    if ($tanggal_sampai != '') $q->where('tanggal', '<=', $tanggal_sampai);
+                    if ($tanggal_mulai != '') $q->where('tanggal', '>=', unformat_date($tanggal_mulai));
+                    if ($tanggal_sampai != '') $q->where('tanggal', '<=', unformat_date($tanggal_sampai));
                     if ($order_tanggal != '') $q->orderBy('tanggal', $order_tanggal);
             });
 

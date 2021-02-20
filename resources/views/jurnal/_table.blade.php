@@ -1,8 +1,8 @@
 <div class="table-responsive">
-    <table class="table table-borderless">
+    <table class="table table-bordered">
         <tbody>
         @foreach($jurnal as $value)
-            <tr style="background-color: rgba(191,200,226,.05);">
+            <tr style="background-color: #eaeaea;">
                 <td class="text-nowrap py-1" width="150px"><b>{{ format_date($value->tanggal) }}</b></td>
                 <td class="text-nowrap py-1" colspan="4"><b>{{ $value->keterangan }}</b></td>
             </tr>

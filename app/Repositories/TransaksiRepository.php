@@ -31,6 +31,14 @@ class TransaksiRepository
         if ($tanggal != '')
             $transaksi = $transaksi->where('tanggal', unformat_date($tanggal));
 
+        $tanggal_mulai = $request->input('tanggal_mulai') ?? '';
+        if ($tanggal_mulai != '')
+            $transaksi = $transaksi->where('tanggal', '>=', unformat_date($tanggal_mulai));
+
+        $tanggal_sampai = $request->input('tanggal_sampai') ?? '';
+        if ($tanggal_sampai != '')
+            $transaksi = $transaksi->where('tanggal', '<=', unformat_date($tanggal_sampai));
+
         $keterangan = $request->input('keterangan');
         if ($keterangan != '')
             $transaksi = $transaksi->where('keterangan', 'like', "%$keterangan%");
@@ -69,6 +77,6 @@ class TransaksiRepository
     {
         $last_record = $this->transaksi->count()+1;
         for ($i = 1; (6-strlen($last_record)); $i++) $last_record = '0' . $last_record;
-        return "RSK-" . $last_record;
+        return "SWI-" . $last_record;
     }
 }
