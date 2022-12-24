@@ -1,15 +1,15 @@
 @extends('layouts.blank')
 
 @section('title')
-    Laba Rugi - Nama Perusahaan -
+    Laba Rugi - PT. Sumo Warna Indonesia -
     @if($tanggal_mulai != '' && $tanggal_sampai != '')
         {{ fulldate($tanggal_mulai) }} s/d {{ fulldate($tanggal_sampai) }}
     @endif
 @endsection
 
 @section('content')
-    <h4 class="text-center mb-0">Nama Perusahaan</h4>
-    <p class="text-center">Alamat perusahaan<br>Kontak perusahaan</p>
+    <h4 class="text-center mb-0">PT. Sumo Warna Indonesia</h4>
+    <p class="text-center">Jl. Margomulyo Blok J No. 19, Pergudangan Margomulyo Permai, Surabaya, Jawa Timur - Indonesia<br>email : info.sumowarna@gmail.com</p>
     <h4 class="text-center mb-0">Laba Rugi</h4>
     @if($tanggal_mulai != '' && $tanggal_sampai != '')
         <h5 class="text-center mb-0">{{ fulldate($tanggal_mulai) }} &nbsp; s/d &nbsp; {{ fulldate($tanggal_sampai) }}</h5>
